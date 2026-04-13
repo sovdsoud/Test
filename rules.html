@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+  *{box-sizing:border-box;margin:0;padding:0;font-family:'Segoe UI',sans-serif}
+  body{background:#fff;padding:14px}
+  .title{display:flex;align-items:center;gap:6px;font-size:11px;font-weight:700;color:#605e5c;text-transform:uppercase;letter-spacing:.8px;padding-bottom:8px;border-bottom:2px solid #f3f2f1;margin-bottom:10px}
+  .title-icon{color:#0078d4;font-size:14px}
+  .rule-item{display:flex;align-items:flex-start;gap:10px;padding:7px 8px;border-radius:4px;margin-bottom:5px;background:#f8f8f8;font-size:12px;color:#323130;line-height:1.5}
+  .rule-item:hover{background:#f0f0f0}
+  .num{background:#0078d4;color:#fff;width:20px;height:20px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;flex-shrink:0;margin-top:1px}
+  .rule-text strong{color:#323130}
+  .divider{height:1px;background:#e0e0e0;margin:8px 0}
+  .tag-section{margin-top:10px}
+  .tag-title{font-size:10px;font-weight:700;color:#605e5c;text-transform:uppercase;letter-spacing:.8px;margin-bottom:6px}
+  .tag-row{display:flex;align-items:center;justify-content:space-between;padding:5px 8px;border-radius:4px;margin-bottom:4px;font-size:11px;background:#f3f2f1}
+  .tag-val{font-family:'Courier New',monospace;font-size:11px;color:#0078d4;font-weight:600;background:#e8f4fd;padding:2px 6px;border-radius:3px}
+</style>
+</head>
+<body>
+  <div class="title"><span class="title-icon">📋</span> Rules</div>
+
+  <div class="rule-item">
+    <div class="num">1</div>
+    <div class="rule-text">Find it, log it, move on — <strong>do not fix</strong></div>
+  </div>
+  <div class="rule-item">
+    <div class="num">2</div>
+    <div class="rule-text">Use the <strong>test environment</strong></div>
+  </div>
+  <div class="rule-item">
+    <div class="num">3</div>
+    <div class="rule-text"><strong>Reproduce it</strong> before you report it</div>
+  </div>
+  <div class="rule-item">
+    <div class="num">4</div>
+    <div class="rule-text">One bug, one ticket. Failures from same root cause &amp; identical behaviour across multiple elements are an exception</div>
+  </div>
+  <div class="rule-item">
+    <div class="num">5</div>
+    <div class="rule-text">Do <strong>not delete</strong> data you did not create</div>
+  </div>
+  <div class="rule-item">
+    <div class="num">6</div>
+    <div class="rule-text">Know the <strong>expected results</strong> when reporting</div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="tag-section">
+    <div class="tag-title">🏷 Required tags on every bug</div>
+    <div class="tag-row">
+      <span>All bugs (required)</span>
+      <span class="tag-val">TestFestConnectivity2026</span>
+    </div>
+    <div class="tag-row">
+      <span>Your team tag</span>
+      <span class="tag-val">e.g. PolishPowerSurge</span>
+    </div>
+  </div>
+</body>
+</html>
