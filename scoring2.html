@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+  *{box-sizing:border-box;margin:0;padding:0;font-family:'Segoe UI',sans-serif}
+  body{background:#fff;padding:14px}
+  .title{display:flex;align-items:center;gap:6px;font-size:11px;font-weight:700;color:#605e5c;text-transform:uppercase;letter-spacing:.8px;padding-bottom:8px;border-bottom:2px solid #f3f2f1;margin-bottom:10px}
+  .title-icon{color:#f59e0b;font-size:14px}
+  .intro{font-size:11px;color:#605e5c;margin-bottom:10px;line-height:1.5}
+  .score-row{display:flex;align-items:center;justify-content:space-between;padding:6px 10px;border-radius:4px;margin-bottom:4px;font-size:12px;color:#323130}
+  .score-left{display:flex;align-items:center;gap:8px}
+  .dot{width:11px;height:11px;border-radius:50%;flex-shrink:0}
+  .score-val{font-weight:700;font-size:13px}
+  .pos{color:#107c10}
+  .neg{color:#a80000}
+  .critical{background:#fde8e8}
+  .high{background:#fef0e6}
+  .medium{background:#fef9c3}
+  .low{background:#e8f4fd}
+  .suggestion{background:#edfaf1}
+  .neutral{background:#f3f2f1}
+  .divider{height:1px;background:#e0e0e0;margin:8px 0}
+</style>
+</head>
+<body>
+  <div class="title"><span class="title-icon">⚡</span> Scoring</div>
+  <div class="intro">Severity assigned after testfest. Set yours to medium.</div>
+
+  <div class="score-row critical">
+    <div class="score-left"><div class="dot" style="background:#c0392b"></div>Critical severity</div>
+    <span class="score-val pos">+10</span>
+  </div>
+  <div class="score-row high">
+    <div class="score-left"><div class="dot" style="background:#e67e22"></div>High severity</div>
+    <span class="score-val pos">+6</span>
+  </div>
+  <div class="score-row medium">
+    <div class="score-left"><div class="dot" style="background:#d4ac0d"></div>Medium severity</div>
+    <span class="score-val pos">+3</span>
+  </div>
+  <div class="score-row low">
+    <div class="score-left"><div class="dot" style="background:#1a6eaa"></div>Low severity</div>
+    <span class="score-val pos">+1</span>
+  </div>
+  <div class="score-row suggestion">
+    <div class="score-left"><div class="dot" style="background:#107c10"></div>Suggestion (if accepted)</div>
+    <span class="score-val pos">+0.5</span>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="score-row neutral">
+    <div class="score-left"><div class="dot" style="background:#605e5c"></div>Poorly described bug</div>
+    <span class="score-val neg">-1</span>
+  </div>
+  <div class="score-row neutral">
+    <div class="score-left"><div class="dot" style="background:#a80000"></div>Duplicate (already reported)</div>
+    <span class="score-val neg">-5</span>
+  </div>
+  <div class="score-row neutral">
+    <div class="score-left"><div class="dot" style="background:#323130"></div>Unsportsmanlike conduct</div>
+    <span class="score-val neg">-20</span>
+  </div>
+</body>
+</html>
